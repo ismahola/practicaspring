@@ -37,6 +37,7 @@ public class AltaController {
 		componente.info("usuario entro en el alta");
 		
 		mav.addObject("camionero", new Camionero());
+		
 		mav.addObject("transporte", Transporte.values());
 		
 		return mav;

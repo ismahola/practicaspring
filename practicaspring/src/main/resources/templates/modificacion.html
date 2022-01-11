@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+	<h1>estas modificando <span th:text="${camionero.nombre}"></span> <span th:text="${camionero.apellidos}"></span></h1>
+	<form action="#" th:action="@{/modificado}" th:object="${modificacion}" method="post">
+
+	    <span th:if="${#fields.hasErrors('nombre')}" th:errors="*{nombre}" style="color: red"></span><br/>
+	    <p>Nombre: <input type="text" th:field="*{nombre}"/></p>
+	
+	    <span th:if="${#fields.hasErrors('apellidos')}" th:errors="*{apellidos}" style="color: red"></span><br/>
+	    <p>Apellidos: <input type="text" th:field="*{apellidos}"/></p>
+	
+	    <span th:if="${#fields.hasErrors('correo')}" th:errors="*{correo}" style="color: red"></span><br/>
+	    <p>Correo electronico: <input type="text" th:field="*{correo}"/></p>
+	
+	    <span th:if="${#fields.hasErrors('telefono')}" th:errors="*{telefono}" style="color: red"></span><br/>
+	    <p>Numero de Telefono: <input type="text" th:field="*{telefono}"></p>
+	
+	    <span th:if="${#fields.hasErrors('fecha')}" th:errors="*{fecha}" style="color: red"></span><br/>
+	    <p>Fecha de Nacimiento: <input type="date" format="yyyy-MM-dd" th:field="*{fecha}"/></p>
+	
+	    <span th:if="${#fields.hasErrors('genero')}" th:errors="*{genero}" style="color: red"></span><br/>
+	    <p>Genero: Hombre<input type="radio" value="Hombre" th:field="*{genero}"/>
+	        Mujer<input type="radio" value="Mujer" th:field="*{genero}"/></p>
+	
+	    <span th:if="${#fields.hasErrors('transporte')}" th:errors="*{transporte}" style="color: red"></span><br/>
+	    <p>transporte: 
+	        <select th:field="*{transporte}">
+	            <option th:each="i : ${transporte}" th:value="${i}" th:text="${i}"></option>
+	        </select>
+	    </p>t
+	
+	    <span th:if="${#fields.hasErrors('contrato')}" th:errors="*{contrato}" style="color: red"></span><br/>
+	    <p>Contratado: Si<input type="radio" value="si" th:field="*{contrato}"/>
+	        No<input type="radio" value="no" th:field="*{contrato}"/></p>
+	
+	    <span th:if="${#fields.hasErrors('comentario')}" th:errors="*{comentario}" style="color: red"></span><br/>
+	    <p><textarea th:field="*{comentario}"></textarea></p>
+	    <p><input type="submit" value="Submit"/></p>
+	</form>
+</body>
+</html>

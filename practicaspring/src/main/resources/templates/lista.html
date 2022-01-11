@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+	<table>
+        <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>Correo electronico</th>
+            <th>Numero de telefono</th>
+            <th>Fecha de Nacimiento</th>
+            <th>Genero</th>
+            <th>Transporte</th>
+            <th>Comentario</th>
+            <th>Contratado</th>
+        </tr>
+        </thead>
+        <tr th:each="i : ${camioneros}">
+            <td><span style="text-align: center" th:text="*{i.nombre}"></span></td>
+            <td><span style="text-align: center" th:text="*{i.apellidos}"></span></td>
+            <td><span style="text-align: center" th:text="*{i.correo}"></span></td>
+            <td><span style="text-align: center" th:text="*{i.telefono}"></span></td>
+            <td><span style="text-align: center" th:text="*{i.fecha}"></span></td>
+            <td><span style="text-align: center" th:text="*{i.genero}"></span></td>
+            <td><span style="text-align: center" th:text="*{i.transporte}"></span></td>
+            <td><span style="text-align: center" th:text="*{i.comentario}"></span></td>
+            <td><span style="text-align: center" th:text="*{i.contrato}"></span></td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,6 @@
+05/01/2022 15:40:27#Modificacion#se ha modificado al camionero prueba prueba y se le a modificado Nombre: prueba1/pruebaComentarios: hola/hola#
+05/01/2022 16:00:14#Modificacion#se ha intentado modificar al camionero Nombre:  Apellidos:  pero no se a encontrado#
+05/01/2022 16:00:28#Modificacion#se ha intentado modificar al camionero Nombre:  Apellidos:  pero no se a encontrado#
+05/01/2022 16:00:52#Modidicacion#se ha intentado modificar al camionero Nombre:  Apellidos: prueba pero los parametros no cumplian las especificaciones necesarias#
+05/01/2022 16:01:13#Modificacion#se ha modificado al camionero prueba prueba y se le a modificado Comentarios: hola/hola Contratado: si/no#
+08/01/2022 16:49:14#Lista#esta es la lista mostrada: Nombre: prueba Apellidos: prueba, #
